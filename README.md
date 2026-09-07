@@ -30,7 +30,7 @@ SCOUT → BUILDER → RUNNER → REVIEWER → WRITER → SHIPPED
 
 There are two workers for each role. Each brief has exactly one owner while being worked on or carried. After work finishes, its owner walks through the central aisle to the next role's desk, hands it off, and returns home. The next available worker in that role claims the queued brief. Desks are role inboxes, so an available same-role colleague may pick up a delivered task.
 
-The room, progress bars, workflow strip, role queues and office chat are views of that same event stream. Every shipped brief produces exactly four handoffs. The office stops when the batch is complete.
+The room, progress bars, workflow strip, role queues and office chat are views of that same event stream. Every shipped brief produces exactly four handoffs. Once all briefs are shipped, workers finish returning to their desks and the office rests.
 
 ## Controls & exports
 

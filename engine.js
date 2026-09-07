@@ -18,7 +18,7 @@
       w.path=[{x:w.x,y:330},{x:to.x,y:330},{x:to.x,y:to.y}];
     }
     step(){
-      if(this.done===this.config.batch)return;
+      if(this.done===this.config.batch&&this.workers.every(w=>w.state==='idle'))return;
       this.tick++;this.t=this.tick*DT;
       for(const w of this.workers){
         if(w.state==='idle'){
@@ -47,7 +47,7 @@
         }
       }
       if(this.tick%30===0)this.history.push({time:Math.round(this.t),done:this.done,working:this.workers.filter(w=>w.state==='working').length,walking:this.workers.filter(w=>w.path.length).length});
-      if(this.done===this.config.batch)this.log('SYSTEM','Inbox zero. Nobody believes it.');
+      if(this.done===this.config.batch&&!this.finished){this.finished=true;this.log('SYSTEM','Inbox zero. Nobody believes it.');}
     }
     export(){return{disclosure:'Local, seeded task-flow simulation. No AI services or API calls.',config:this.config,time:this.t,done:this.done,handoffs:this.handoffs,jobs:this.jobs,events:this.events,history:this.history};}
   }

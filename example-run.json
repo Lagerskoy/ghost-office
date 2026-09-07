@@ -1,0 +1,1078 @@
+{
+  "disclosure": "Local, seeded task-flow simulation. No AI services or API calls.",
+  "config": {
+    "seed": 731,
+    "batch": 12
+  },
+  "time": 60,
+  "done": 4,
+  "handoffs": 29,
+  "jobs": [
+    {
+      "id": 1,
+      "stage": 4,
+      "status": "done",
+      "worker": null
+    },
+    {
+      "id": 2,
+      "stage": 4,
+      "status": "done",
+      "worker": null
+    },
+    {
+      "id": 3,
+      "stage": 4,
+      "status": "done",
+      "worker": null
+    },
+    {
+      "id": 4,
+      "stage": 4,
+      "status": "done",
+      "worker": null
+    },
+    {
+      "id": 5,
+      "stage": 4,
+      "status": "working",
+      "worker": 9
+    },
+    {
+      "id": 6,
+      "stage": 4,
+      "status": "working",
+      "worker": 4
+    },
+    {
+      "id": 7,
+      "stage": 2,
+      "status": "in transit",
+      "worker": 7
+    },
+    {
+      "id": 8,
+      "stage": 2,
+      "status": "in transit",
+      "worker": 2
+    },
+    {
+      "id": 9,
+      "stage": 1,
+      "status": "working",
+      "worker": 1
+    },
+    {
+      "id": 10,
+      "stage": 0,
+      "status": "in transit",
+      "worker": 0
+    },
+    {
+      "id": 11,
+      "stage": 0,
+      "status": "queued",
+      "worker": null
+    },
+    {
+      "id": 12,
+      "stage": 0,
+      "status": "queued",
+      "worker": null
+    }
+  ],
+  "events": [
+    {
+      "tick": 0,
+      "time": 0,
+      "role": "SYSTEM",
+      "message": "12 briefs queued. Ten ghosts clocked in."
+    },
+    {
+      "tick": 1,
+      "time": 0.03,
+      "role": "SCOUT",
+      "message": "#01 started"
+    },
+    {
+      "tick": 1,
+      "time": 0.03,
+      "role": "SCOUT",
+      "message": "#02 started"
+    },
+    {
+      "tick": 93,
+      "time": 3.1,
+      "role": "SCOUT",
+      "message": "#01 → BUILDER"
+    },
+    {
+      "tick": 98,
+      "time": 3.27,
+      "role": "SCOUT",
+      "message": "#02 → BUILDER"
+    },
+    {
+      "tick": 237,
+      "time": 7.9,
+      "role": "HANDOFF",
+      "message": "#01 received by BUILDER"
+    },
+    {
+      "tick": 237,
+      "time": 7.9,
+      "role": "BUILDER",
+      "message": "#01 started"
+    },
+    {
+      "tick": 242,
+      "time": 8.07,
+      "role": "HANDOFF",
+      "message": "#02 received by BUILDER"
+    },
+    {
+      "tick": 242,
+      "time": 8.07,
+      "role": "BUILDER",
+      "message": "#02 started"
+    },
+    {
+      "tick": 314,
+      "time": 10.47,
+      "role": "BUILDER",
+      "message": "#01 → RUNNER"
+    },
+    {
+      "tick": 352,
+      "time": 11.73,
+      "role": "BUILDER",
+      "message": "#02 → RUNNER"
+    },
+    {
+      "tick": 382,
+      "time": 12.73,
+      "role": "SCOUT",
+      "message": "#03 started"
+    },
+    {
+      "tick": 387,
+      "time": 12.9,
+      "role": "SCOUT",
+      "message": "#04 started"
+    },
+    {
+      "tick": 452,
+      "time": 15.07,
+      "role": "SCOUT",
+      "message": "#04 → BUILDER"
+    },
+    {
+      "tick": 458,
+      "time": 15.27,
+      "role": "HANDOFF",
+      "message": "#01 received by RUNNER"
+    },
+    {
+      "tick": 458,
+      "time": 15.27,
+      "role": "RUNNER",
+      "message": "#01 started"
+    },
+    {
+      "tick": 478,
+      "time": 15.93,
+      "role": "SCOUT",
+      "message": "#03 → BUILDER"
+    },
+    {
+      "tick": 496,
+      "time": 16.53,
+      "role": "HANDOFF",
+      "message": "#02 received by RUNNER"
+    },
+    {
+      "tick": 496,
+      "time": 16.53,
+      "role": "RUNNER",
+      "message": "#02 started"
+    },
+    {
+      "tick": 543,
+      "time": 18.1,
+      "role": "RUNNER",
+      "message": "#01 → REVIEWER"
+    },
+    {
+      "tick": 574,
+      "time": 19.13,
+      "role": "RUNNER",
+      "message": "#02 → REVIEWER"
+    },
+    {
+      "tick": 596,
+      "time": 19.87,
+      "role": "HANDOFF",
+      "message": "#04 received by BUILDER"
+    },
+    {
+      "tick": 603,
+      "time": 20.1,
+      "role": "BUILDER",
+      "message": "#04 started"
+    },
+    {
+      "tick": 622,
+      "time": 20.73,
+      "role": "HANDOFF",
+      "message": "#03 received by BUILDER"
+    },
+    {
+      "tick": 641,
+      "time": 21.37,
+      "role": "BUILDER",
+      "message": "#03 started"
+    },
+    {
+      "tick": 683,
+      "time": 22.77,
+      "role": "BUILDER",
+      "message": "#04 → RUNNER"
+    },
+    {
+      "tick": 687,
+      "time": 22.9,
+      "role": "HANDOFF",
+      "message": "#01 received by REVIEWER"
+    },
+    {
+      "tick": 687,
+      "time": 22.9,
+      "role": "REVIEWER",
+      "message": "#01 started"
+    },
+    {
+      "tick": 718,
+      "time": 23.93,
+      "role": "HANDOFF",
+      "message": "#02 received by REVIEWER"
+    },
+    {
+      "tick": 718,
+      "time": 23.93,
+      "role": "REVIEWER",
+      "message": "#02 started"
+    },
+    {
+      "tick": 738,
+      "time": 24.6,
+      "role": "BUILDER",
+      "message": "#03 → RUNNER"
+    },
+    {
+      "tick": 741,
+      "time": 24.7,
+      "role": "SCOUT",
+      "message": "#05 started"
+    },
+    {
+      "tick": 767,
+      "time": 25.57,
+      "role": "SCOUT",
+      "message": "#06 started"
+    },
+    {
+      "tick": 775,
+      "time": 25.83,
+      "role": "REVIEWER",
+      "message": "#01 → WRITER"
+    },
+    {
+      "tick": 795,
+      "time": 26.5,
+      "role": "REVIEWER",
+      "message": "#02 → WRITER"
+    },
+    {
+      "tick": 827,
+      "time": 27.57,
+      "role": "HANDOFF",
+      "message": "#04 received by RUNNER"
+    },
+    {
+      "tick": 832,
+      "time": 27.73,
+      "role": "RUNNER",
+      "message": "#04 started"
+    },
+    {
+      "tick": 848,
+      "time": 28.27,
+      "role": "SCOUT",
+      "message": "#05 → BUILDER"
+    },
+    {
+      "tick": 871,
+      "time": 29.03,
+      "role": "SCOUT",
+      "message": "#06 → BUILDER"
+    },
+    {
+      "tick": 882,
+      "time": 29.4,
+      "role": "HANDOFF",
+      "message": "#03 received by RUNNER"
+    },
+    {
+      "tick": 882,
+      "time": 29.4,
+      "role": "RUNNER",
+      "message": "#03 started"
+    },
+    {
+      "tick": 919,
+      "time": 30.63,
+      "role": "HANDOFF",
+      "message": "#01 received by WRITER"
+    },
+    {
+      "tick": 919,
+      "time": 30.63,
+      "role": "WRITER",
+      "message": "#01 started"
+    },
+    {
+      "tick": 939,
+      "time": 31.3,
+      "role": "HANDOFF",
+      "message": "#02 received by WRITER"
+    },
+    {
+      "tick": 939,
+      "time": 31.3,
+      "role": "WRITER",
+      "message": "#02 started"
+    },
+    {
+      "tick": 950,
+      "time": 31.67,
+      "role": "RUNNER",
+      "message": "#03 → REVIEWER"
+    },
+    {
+      "tick": 957,
+      "time": 31.9,
+      "role": "RUNNER",
+      "message": "#04 → REVIEWER"
+    },
+    {
+      "tick": 992,
+      "time": 33.07,
+      "role": "HANDOFF",
+      "message": "#05 received by BUILDER"
+    },
+    {
+      "tick": 993,
+      "time": 33.1,
+      "role": "BUILDER",
+      "message": "#05 started"
+    },
+    {
+      "tick": 1015,
+      "time": 33.83,
+      "role": "HANDOFF",
+      "message": "#06 received by BUILDER"
+    },
+    {
+      "tick": 1023,
+      "time": 34.1,
+      "role": "SHIPPED",
+      "message": "#01 approved and delivered"
+    },
+    {
+      "tick": 1023,
+      "time": 34.1,
+      "role": "SHIPPED",
+      "message": "#02 approved and delivered"
+    },
+    {
+      "tick": 1027,
+      "time": 34.23,
+      "role": "BUILDER",
+      "message": "#06 started"
+    },
+    {
+      "tick": 1094,
+      "time": 36.47,
+      "role": "HANDOFF",
+      "message": "#03 received by REVIEWER"
+    },
+    {
+      "tick": 1094,
+      "time": 36.47,
+      "role": "REVIEWER",
+      "message": "#03 started"
+    },
+    {
+      "tick": 1096,
+      "time": 36.53,
+      "role": "BUILDER",
+      "message": "#05 → RUNNER"
+    },
+    {
+      "tick": 1101,
+      "time": 36.7,
+      "role": "HANDOFF",
+      "message": "#04 received by REVIEWER"
+    },
+    {
+      "tick": 1101,
+      "time": 36.7,
+      "role": "REVIEWER",
+      "message": "#04 started"
+    },
+    {
+      "tick": 1137,
+      "time": 37.9,
+      "role": "SCOUT",
+      "message": "#07 started"
+    },
+    {
+      "tick": 1150,
+      "time": 38.33,
+      "role": "BUILDER",
+      "message": "#06 → RUNNER"
+    },
+    {
+      "tick": 1160,
+      "time": 38.67,
+      "role": "SCOUT",
+      "message": "#08 started"
+    },
+    {
+      "tick": 1202,
+      "time": 40.07,
+      "role": "REVIEWER",
+      "message": "#03 → WRITER"
+    },
+    {
+      "tick": 1214,
+      "time": 40.47,
+      "role": "SCOUT",
+      "message": "#07 → BUILDER"
+    },
+    {
+      "tick": 1231,
+      "time": 41.03,
+      "role": "REVIEWER",
+      "message": "#04 → WRITER"
+    },
+    {
+      "tick": 1240,
+      "time": 41.33,
+      "role": "HANDOFF",
+      "message": "#05 received by RUNNER"
+    },
+    {
+      "tick": 1240,
+      "time": 41.33,
+      "role": "RUNNER",
+      "message": "#05 started"
+    },
+    {
+      "tick": 1265,
+      "time": 42.17,
+      "role": "SCOUT",
+      "message": "#08 → BUILDER"
+    },
+    {
+      "tick": 1294,
+      "time": 43.13,
+      "role": "HANDOFF",
+      "message": "#06 received by RUNNER"
+    },
+    {
+      "tick": 1295,
+      "time": 43.17,
+      "role": "RUNNER",
+      "message": "#06 started"
+    },
+    {
+      "tick": 1346,
+      "time": 44.87,
+      "role": "HANDOFF",
+      "message": "#03 received by WRITER"
+    },
+    {
+      "tick": 1346,
+      "time": 44.87,
+      "role": "WRITER",
+      "message": "#03 started"
+    },
+    {
+      "tick": 1358,
+      "time": 45.27,
+      "role": "HANDOFF",
+      "message": "#07 received by BUILDER"
+    },
+    {
+      "tick": 1358,
+      "time": 45.27,
+      "role": "RUNNER",
+      "message": "#05 → REVIEWER"
+    },
+    {
+      "tick": 1363,
+      "time": 45.43,
+      "role": "RUNNER",
+      "message": "#06 → REVIEWER"
+    },
+    {
+      "tick": 1375,
+      "time": 45.83,
+      "role": "HANDOFF",
+      "message": "#04 received by WRITER"
+    },
+    {
+      "tick": 1375,
+      "time": 45.83,
+      "role": "WRITER",
+      "message": "#04 started"
+    },
+    {
+      "tick": 1385,
+      "time": 46.17,
+      "role": "BUILDER",
+      "message": "#07 started"
+    },
+    {
+      "tick": 1402,
+      "time": 46.73,
+      "role": "SHIPPED",
+      "message": "#03 approved and delivered"
+    },
+    {
+      "tick": 1409,
+      "time": 46.97,
+      "role": "HANDOFF",
+      "message": "#08 received by BUILDER"
+    },
+    {
+      "tick": 1439,
+      "time": 47.97,
+      "role": "BUILDER",
+      "message": "#08 started"
+    },
+    {
+      "tick": 1452,
+      "time": 48.4,
+      "role": "SHIPPED",
+      "message": "#04 approved and delivered"
+    },
+    {
+      "tick": 1472,
+      "time": 49.07,
+      "role": "BUILDER",
+      "message": "#07 → RUNNER"
+    },
+    {
+      "tick": 1502,
+      "time": 50.07,
+      "role": "HANDOFF",
+      "message": "#05 received by REVIEWER"
+    },
+    {
+      "tick": 1502,
+      "time": 50.07,
+      "role": "REVIEWER",
+      "message": "#05 started"
+    },
+    {
+      "tick": 1503,
+      "time": 50.1,
+      "role": "SCOUT",
+      "message": "#09 started"
+    },
+    {
+      "tick": 1507,
+      "time": 50.23,
+      "role": "HANDOFF",
+      "message": "#06 received by REVIEWER"
+    },
+    {
+      "tick": 1520,
+      "time": 50.67,
+      "role": "REVIEWER",
+      "message": "#06 started"
+    },
+    {
+      "tick": 1520,
+      "time": 50.67,
+      "role": "BUILDER",
+      "message": "#08 → RUNNER"
+    },
+    {
+      "tick": 1554,
+      "time": 51.8,
+      "role": "SCOUT",
+      "message": "#10 started"
+    },
+    {
+      "tick": 1586,
+      "time": 52.87,
+      "role": "SCOUT",
+      "message": "#09 → BUILDER"
+    },
+    {
+      "tick": 1615,
+      "time": 53.83,
+      "role": "REVIEWER",
+      "message": "#06 → WRITER"
+    },
+    {
+      "tick": 1616,
+      "time": 53.87,
+      "role": "HANDOFF",
+      "message": "#07 received by RUNNER"
+    },
+    {
+      "tick": 1625,
+      "time": 54.17,
+      "role": "REVIEWER",
+      "message": "#05 → WRITER"
+    },
+    {
+      "tick": 1647,
+      "time": 54.9,
+      "role": "RUNNER",
+      "message": "#07 started"
+    },
+    {
+      "tick": 1657,
+      "time": 55.23,
+      "role": "SCOUT",
+      "message": "#10 → BUILDER"
+    },
+    {
+      "tick": 1664,
+      "time": 55.47,
+      "role": "HANDOFF",
+      "message": "#08 received by RUNNER"
+    },
+    {
+      "tick": 1665,
+      "time": 55.5,
+      "role": "RUNNER",
+      "message": "#08 started"
+    },
+    {
+      "tick": 1727,
+      "time": 57.57,
+      "role": "RUNNER",
+      "message": "#08 → REVIEWER"
+    },
+    {
+      "tick": 1730,
+      "time": 57.67,
+      "role": "HANDOFF",
+      "message": "#09 received by BUILDER"
+    },
+    {
+      "tick": 1735,
+      "time": 57.83,
+      "role": "RUNNER",
+      "message": "#07 → REVIEWER"
+    },
+    {
+      "tick": 1759,
+      "time": 58.63,
+      "role": "HANDOFF",
+      "message": "#06 received by WRITER"
+    },
+    {
+      "tick": 1759,
+      "time": 58.63,
+      "role": "WRITER",
+      "message": "#06 started"
+    },
+    {
+      "tick": 1761,
+      "time": 58.7,
+      "role": "BUILDER",
+      "message": "#09 started"
+    },
+    {
+      "tick": 1769,
+      "time": 58.97,
+      "role": "HANDOFF",
+      "message": "#05 received by WRITER"
+    },
+    {
+      "tick": 1769,
+      "time": 58.97,
+      "role": "WRITER",
+      "message": "#05 started"
+    }
+  ],
+  "history": [
+    {
+      "time": 1,
+      "done": 0,
+      "working": 2,
+      "walking": 0
+    },
+    {
+      "time": 2,
+      "done": 0,
+      "working": 2,
+      "walking": 0
+    },
+    {
+      "time": 3,
+      "done": 0,
+      "working": 2,
+      "walking": 0
+    },
+    {
+      "time": 4,
+      "done": 0,
+      "working": 0,
+      "walking": 2
+    },
+    {
+      "time": 5,
+      "done": 0,
+      "working": 0,
+      "walking": 2
+    },
+    {
+      "time": 6,
+      "done": 0,
+      "working": 0,
+      "walking": 2
+    },
+    {
+      "time": 7,
+      "done": 0,
+      "working": 0,
+      "walking": 2
+    },
+    {
+      "time": 8,
+      "done": 0,
+      "working": 1,
+      "walking": 2
+    },
+    {
+      "time": 9,
+      "done": 0,
+      "working": 2,
+      "walking": 2
+    },
+    {
+      "time": 10,
+      "done": 0,
+      "working": 2,
+      "walking": 2
+    },
+    {
+      "time": 11,
+      "done": 0,
+      "working": 1,
+      "walking": 3
+    },
+    {
+      "time": 12,
+      "done": 0,
+      "working": 0,
+      "walking": 4
+    },
+    {
+      "time": 13,
+      "done": 0,
+      "working": 2,
+      "walking": 2
+    },
+    {
+      "time": 14,
+      "done": 0,
+      "working": 2,
+      "walking": 2
+    },
+    {
+      "time": 15,
+      "done": 0,
+      "working": 2,
+      "walking": 2
+    },
+    {
+      "time": 16,
+      "done": 0,
+      "working": 1,
+      "walking": 4
+    },
+    {
+      "time": 17,
+      "done": 0,
+      "working": 2,
+      "walking": 4
+    },
+    {
+      "time": 18,
+      "done": 0,
+      "working": 2,
+      "walking": 4
+    },
+    {
+      "time": 19,
+      "done": 0,
+      "working": 1,
+      "walking": 5
+    },
+    {
+      "time": 20,
+      "done": 0,
+      "working": 0,
+      "walking": 6
+    },
+    {
+      "time": 21,
+      "done": 0,
+      "working": 1,
+      "walking": 5
+    },
+    {
+      "time": 22,
+      "done": 0,
+      "working": 2,
+      "walking": 4
+    },
+    {
+      "time": 23,
+      "done": 0,
+      "working": 2,
+      "walking": 5
+    },
+    {
+      "time": 24,
+      "done": 0,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 25,
+      "done": 0,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 26,
+      "done": 0,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 27,
+      "done": 0,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 28,
+      "done": 0,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 29,
+      "done": 0,
+      "working": 2,
+      "walking": 5
+    },
+    {
+      "time": 30,
+      "done": 0,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 31,
+      "done": 0,
+      "working": 3,
+      "walking": 6
+    },
+    {
+      "time": 32,
+      "done": 0,
+      "working": 2,
+      "walking": 8
+    },
+    {
+      "time": 33,
+      "done": 0,
+      "working": 2,
+      "walking": 7
+    },
+    {
+      "time": 34,
+      "done": 0,
+      "working": 3,
+      "walking": 7
+    },
+    {
+      "time": 35,
+      "done": 2,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 36,
+      "done": 2,
+      "working": 2,
+      "walking": 5
+    },
+    {
+      "time": 37,
+      "done": 2,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 38,
+      "done": 2,
+      "working": 4,
+      "walking": 4
+    },
+    {
+      "time": 39,
+      "done": 2,
+      "working": 4,
+      "walking": 4
+    },
+    {
+      "time": 40,
+      "done": 2,
+      "working": 4,
+      "walking": 4
+    },
+    {
+      "time": 41,
+      "done": 2,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 42,
+      "done": 2,
+      "working": 2,
+      "walking": 5
+    },
+    {
+      "time": 43,
+      "done": 2,
+      "working": 1,
+      "walking": 6
+    },
+    {
+      "time": 44,
+      "done": 2,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 45,
+      "done": 2,
+      "working": 3,
+      "walking": 6
+    },
+    {
+      "time": 46,
+      "done": 2,
+      "working": 2,
+      "walking": 8
+    },
+    {
+      "time": 47,
+      "done": 3,
+      "working": 2,
+      "walking": 7
+    },
+    {
+      "time": 48,
+      "done": 3,
+      "working": 3,
+      "walking": 6
+    },
+    {
+      "time": 49,
+      "done": 4,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 50,
+      "done": 4,
+      "working": 1,
+      "walking": 6
+    },
+    {
+      "time": 51,
+      "done": 4,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 52,
+      "done": 4,
+      "working": 4,
+      "walking": 4
+    },
+    {
+      "time": 53,
+      "done": 4,
+      "working": 3,
+      "walking": 5
+    },
+    {
+      "time": 54,
+      "done": 4,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 55,
+      "done": 4,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 56,
+      "done": 4,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 57,
+      "done": 4,
+      "working": 2,
+      "walking": 6
+    },
+    {
+      "time": 58,
+      "done": 4,
+      "working": 0,
+      "walking": 8
+    },
+    {
+      "time": 59,
+      "done": 4,
+      "working": 3,
+      "walking": 7
+    },
+    {
+      "time": 60,
+      "done": 4,
+      "working": 3,
+      "walking": 7
+    }
+  ]
+}
